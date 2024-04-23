@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="bootstrap.bundle.min.js"></script>
+    <title>Cool Science Games</title>
+    <style>
+        .rounded {
+            border-radius: 15% !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-5 bg-dark text-white text-center">
+        <img src="images/coolScienceGamesLogo.png" alt="Logo" style="margin: 20px auto; max-width: 100%; height: auto;">
+        <h1>Comp Sci 1A</h1>
+    </div>
+    <div class="container-fluid" style="background-color: #1c1716;">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row container-fluid p-5 text-white justify-content-center">
+                    <div class="col-md-auto image-container">
+                        <img class="rounded border border-warning border-2" src="images/snake.jpg" alt="placeholder" style="height: 200px; margin-left: -15px;">
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xs-12">
+                        <h3>Snake</h3>
+                        <p>A classic game where the more you eat, the bigger your snake gets! Navigate using the arrow keys and avoid touching the edges; otherwise your snake will die.</p>
+                        <a href="games/snake.html" class="btn btn-primary">Play Snake</a>
+                    </div>
+                </div>
+                <div class="row container-fluid p-5 text-white justify-content-center">
+                    <div class="col-md-auto image-container">
+                        <img class="rounded border border-warning border-2" src="images/worldshardestgame.jpg" alt="placeholder" style="height: 200px; margin-left: -15px;">
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xs-12">
+                        <h3>World's Hardest Game</h3>
+                        <p>Can you beat this impossible game? Navigate using the arrow keys. Try not to die!</p>
+                        <a href="games/worlds-hardest-game.html" class="btn btn-primary">Play World's Hardest Game</a>
+                    </div>
+                </div>
+                <div class="row container-fluid p-5 text-white justify-content-center">
+                    <div class="col-md-auto image-container">
+                        <img class="rounded border border-warning border-2" src="images/poker.jpg" alt="placeholder" style="height: 200px; margin-left: -15px;">
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xs-12">
+                        <h3>Poker</h3>
+                        <p>The gambling game that never gets old! Are you ready to have some fun?</p>
+                        <a href="games/poker.html" class="btn btn-primary">Play Poker</a>
+                    </div>
+                </div>
+                <div class="row container-fluid p-5 text-white justify-content-center">
+                    <div class="col-md-auto image-container">
+                        <img class="rounded border border-warning border-2" src="images/tictactoe.jpg" alt="placeholder" style="height: 200px; margin-left: -15px;">
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xs-12">
+                        <h3>Tic Tac Toe</h3>
+                        <p>User chooses a spot on the board to place their X. The opponent places their O next. Whoever gets three Xs or three Os in a row wins!</p>
+                        <a href="games/tic-tac-toe.html" class="btn btn-primary">Play Tic Tac Toe</a>
+                    </div>
+                </div>
+                <div class="row container-fluid p-5 text-white justify-content-center">
+                    <div class="col-md-auto image-container">
+                        <img class="rounded border border-warning border-2" src="images/asteroids.jpg" alt="placeholder" style="height: 200px; margin-left: -15px;">
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xs-12">
+                        <h3>Asteroids</h3>
+                        <p>This game is so fun. Kids all over the world love to play Asteroid. Asteroid is pretty great.</p>
+                        <a href="games/asteroids.html" class="btn btn-primary">Play Asteroids</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <!-- Ads Column -->
+                <div class="row container-fluid p-5 text-white border-light">
+                    <div class="col-md-auto">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img id="ad1" src="ads/ad1.png" alt="ad" style="width: 100%;"> </a>
+                    </div>
+                </div>
+                <div class="row container-fluid p-5 text-white border-light">
+                    <div class="col-md-auto">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> <img id="ad2" src="ads/ad2.png" alt="ad" style="width: 100%;"> </a>
+                    </div>
+                </div>
+                <div class="row container-fluid p-5 text-white border-light">
+                    <div class="col-md-auto">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> <img id="ad3" src="ads/ad3.png" alt="ad" style="width: 100%;"> </a>
+                    </div>
+                </div>
+                <div class="row container-fluid p-5 text-white border-light">
+                    <div class="col-md-auto">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> <img id="ad4" src="ads/ad4.png" alt="ad" style="width: 100%;"> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        for (i = 1; i <= 4; i++) {
+            document.getElementById("ad" + i).src = "ads/ad" + (Math.floor(Math.random() * 10) + 1) + ".png";
+        }
+    </script>
+</body>
+</html>

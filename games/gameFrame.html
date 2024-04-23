@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Java Game Frame</title>
+  <script src="https://cjrtnc.leaningtech.com/3.0/cj3loader.js"></script>
+</head>
+<style>
+  body {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
+<body>
+  <script>
+    var game = (new URLSearchParams(window.location.search)).get('game');
+    (async function () {
+      await cheerpjInit();
+      //cheerpjCreateDisplay(screen.width, screen.height);
+      cheerpjCreateDisplay(800, 800);
+      await cheerpjRunJar("/app/gameFiles/" + game + ".jar");
+    })(); 
+  </script>
+</body>
+
+</html>

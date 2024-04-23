@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Tic Tac Toe </title>
+    <link rel="stylesheet" href="../styles/gamePage.css">
+</head>
+<body>
+    <h1> TIC TAC TOE </h1>
+    <a href="../index.html"> <img src="../images/home.png" width="80" style="position:absolute; top:5px; right: 5px;"> </a>
+    <p> User chooses a spot on the board to place their X. The opponent places their O next. Whoever gets three Xs or three Os in a row wins! </p>
+    <iframe src="gameFrame.html?game=TicTacToe" style="width: 800px; height:800px; background-color: #332D2D"></iframe>
+    <h2> PLAY MORE </h2>
+    <div class="playMore">
+        <div class="container">
+            <h3 class="playMoreTitle"> Poker </h3>
+            <a href="poker.html"> <img src="../images/poker.jpg" alt="Poker" width="200"> </a>
+        </div>
+        <div class="container">
+            <h3 class="playMoreTitle"> World's Hardest Game </h3>
+            <a href="worlds-hardest-game.html"> <img src="../images/worldshardestgame.jpg" alt="World's Hardest Game" width="200"> </a>
+        </div>
+        <div class="container">
+            <h3 class="playMoreTitle"> Snake </h3>
+            <a href="snake.html"> <img src="../images/snake.jpg"alt="Snake" width="200"> </a>
+        </div>
+        <div class="container">
+            <h3 class="playMoreTitle"> Asteroids </h3>
+            <a href="asteroids.html"> <img src="../images/asteroids.jpg" alt="Asteroids" width="200"> </a>
+        </div>
+    </div>
+    <script>
+        window.addEventListener("keydown", (e) => {
+          if (["Space", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.code)) {
+            e.preventDefault();
+          }
+        }, false);
+    </script>
+</body>
+</html>
