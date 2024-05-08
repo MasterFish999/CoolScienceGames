@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bomberman - Cool Science Games</title>
+    <link rel="stylesheet" href="../styles/gamePage.css">
+</head>
+<body>
+    <h1> Bomberman </h1>
+    <link rel="icon" type="image/x-icon" href="../images/coolScienceGamesFavicon.png">
+    <a href="../index.html"> <img src="../images/home.png" width="80" style="position:absolute; top:5px; right: 5px;"> </a>
+    <p>Description</p>
+    <iframe src="gameFrame.html?game=Bomberman&width=800&height=800" style="width: 800px; height:800px; background-color: #332D2D"></iframe>
+    <h2> PLAY MORE </h2>
+    <div class="playMore">
+        <div class="container">
+            <h3 class="playMoreTitle"> Blackjack </h3>
+            <a href="blackjack.html"> <img src="../images/blackjack.jpg" alt="Blackjack" width="200"> </a>
+        </div>
+        <div class="container">
+            <h3 class="playMoreTitle"> World's Hardest Game </h3>
+            <a href="worlds-hardest-game.html"> <img src="../images/worldshardestgame.jpg" alt="World's Hardest Game" width="200"> </a>
+        </div>
+        <div class="container">
+            <h3 class="playMoreTitle"> Tic Tac Toe </h3>
+            <a href="tic-tac-toe.html"> <img src="../images/tictactoe.jpg" alt="Tic Tac Toe" width="200"> </a>
+        </div>
+        <div class="container">
+            <h3 class="playMoreTitle"> Snake </h3>
+            <a href="snake.html"> <img src="../images/snake.jpg" alt="Snake" width="200"> </a>
+          </div>
+    </div>
+    <script>
+        window.addEventListener("keydown", (e) => {
+          if (["Space", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.code)) {
+            e.preventDefault();
+          }
+        }, false);
+    </script>
+</body>
+</html>
